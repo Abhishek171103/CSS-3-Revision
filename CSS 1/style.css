@@ -1,0 +1,1164 @@
+
+/* font-size, font-family, font-weight, font-style, line */
+#SecondDiv{
+    font-size: 20px;                  /* Yeh font ki size btata hai. */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;       /* Yeh font ki family btata hai. */
+    font-weight: lighter;              /* Yeh text ko bold or light karne me kaam aata hai. */
+    font-style: oblique;              /* Yeh font ki style btata hai. */
+    line-height: 20px;
+}
+
+/* background-color : Acqa;, rgb;, rgba;, hsl;, #fff;, color */
+#SecondDiv_firstParagraph{
+    line-height: 30px;                /* Yeh lines ke beech me gap ko set karta hai. */
+    background-color: aqua;
+    /* background-color: rgb(red, green, blue); */
+    /* background-color: rgba(red, green, blue, alpha);     Alpha color ko transpit karne me help karta hai. */
+    /* background-color: hsl(hue, saturation, lightness); */
+    /* background-color: #fff; */
+    color: red;
+}
+
+/* Box Model ( border: style color width, 
+                border-radius: top bottom left right
+                width, heigth
+                margin, padding*/
+#ThirdDiv_heading{
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: aqua;
+    color: red;
+    border-style: solid;     /* Yeh border ki style ko btata hai. */
+    border-width: 5px;       /* Yeh border ki width ko btata hai. */
+    border-color: brown;    /* Yeh border me color provide karta hai. */ 
+    /* border: dotted red 10px;   { Shortcut Formula = border: style color width */
+
+    border-radius: 10px;    /* Yeh chaaro side se curve radius me provide karta hai. */
+    /* border-top: ;
+    border-top-left-radius: ;
+    border-top-right-radius: ;
+    border-bottom-left-radius: ;
+    border-bottom-right-radius: ; */
+    width: 250px;    
+    height: 100px;
+
+    padding-left: 15px;
+    padding-top: 20px;
+    margin: 30px;
+}
+
+#ThirdDiv_firstParagraph{
+    background-color: blueviolet;
+    color: white;
+    border: dashed brown 10px;
+    border-radius: 10px;
+    width: 400px;    
+    height: 150px;
+    padding: 10px 20px 30px 70px;
+    
+}
+
+#ThirdDiv_secondParagraph{
+    background-color: tomato;
+    color: aqua;
+    border: double brown 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 20px 40px 60px 80px;
+}
+
+#FirstSpan{
+    font-size: xx-large;
+    background-color: brown;
+    color: white;
+    border: solid black 5px;
+    border-radius: 5px;
+    /* height: 100px;                           Spna tag me width or height attribute kaam nahi karte hai.
+    width: 100px; */
+}
+
+hr{
+    border-color: brown;
+}
+
+/* Block element */
+.FouthDiv_Heading{
+    border: solid brown 4px;
+    width: 400px;
+    height: 100px;
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+/* Inine element */ 
+.FourthDiv_span{
+    border: 2px black solid;
+    width: 200px;                    /* Not Working */
+    height: 200px;                  /* Not working */
+    padding: 50px;
+    margin: 50px;                /* Working but only horizontal*/
+    display: block;              /* Converting Inline to block element. */
+    display: inline-block;
+}
+
+/* Box-Sizing - Border box */
+#FourthDiv_thirdHeading{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#FourthDiv_thirdHeading{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    padding: 100px;
+}
+
+.Fifthdiv_Image{
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+
+#FifthDiv{
+    position: relative;
+}
+
+/* Relative Position */
+#Fifthdiv_Image1{
+    border: solid 2px red;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#Fifthdiv_Image2{
+    border: solid 2px red;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+
+/* Absolute Position */
+#Fifthdiv_Image6{
+    position: absolute;
+    top: 500px;
+}
+
+/* Fixed Position */
+#Fifthdiv_Image11{
+    position:fixed;
+    bottom: 150px;
+}
+
+/* Sticky Position */
+#Fifthdiv_Image16{
+    position: sticky;
+    top: 200px;
+}
+
+/* Float */
+#SixDiv_Image1{
+    float: right;
+}
+
+/* Float vs Clear */
+#SixDiv_Image2{
+    float: left;
+    clear: right;
+}
+
+/* Float and Overflow */
+.item{
+    width: 100px;
+    height: 100px;
+    border: black 4px solid;
+    margin: 3px;
+    background-color: aquamarine;
+    float: left;
+    overflow: auto;
+}
+
+#SeventhDiv{
+    background-color: red;
+    border: 4px solid black;
+    padding:10px;
+}
+
+#SeventhDiv_heading{
+    border: solid 4px red;
+    background-color: aqua;
+    padding-top: 5px;
+    height: 270px;
+    font-size: 25px;
+}
+
+.seventhDiv_Class{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+/* display: flex and flex-direction, flex-wrap, flex-flow, justify-content, align-items: center */
+#SeventhDiv2{
+    background-color:darkgoldenrod;
+    border:2px dashed black;
+    height: 400px;
+    display: flex;       /* By default flex direction row set ho jaati hai.*/
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-wrap: wrap; 
+    justify-content:center;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap-reverse;
+    flex-flow:row-reverse;             /* Specifies how flexbox items are placed in the flexbox. */
+}
+
+#SeventhDiv2_FirstDiv{
+    background-color: yellow;
+    border: solid 4px black;  
+}
+
+#SeventhDiv2_SecondDiv{
+    background-color: aqua;
+    border: solid 4px black;  
+}
+
+#SeventhDiv2_ThirdDiv{
+    background-color: blueviolet;
+    border: solid 4px black;  
+}
+
+#SeventhDiv2_FourthDiv{
+    background-color: steelblue;
+    border: solid 4px black;  
+}
+
+#SeventhDiv2_FifthDiv{
+    background-color:beige;
+    border: solid 4px black;
+}
+
+#SeventhDiv2_SixthDiv{
+    background-color:cadetblue;
+    border: solid 4px black;
+}
+
+#SeventhDiv2_SeventhDiv{
+    background-color:chartreuse;
+    border: solid 4px black;
+}
+
+#SeventhDiv2_EightDiv{
+    background-color:darkkhaki;
+    border: solid 4px black;
+}
+
+/* align-self */  
+#SeventhDiv2_NinthDiv{
+    background-color:beige;
+    border: solid 4px black;
+    align-self: center;
+}
+
+#SeventhDiv2_TenthDiv{
+    background-color:cadetblue;
+    border: solid 4px black;
+}
+
+/* flex-basis */
+#SeventhDiv2_EleventhDiv{
+    background-color:chartreuse;
+    border: solid 4px black;
+    flex-basis: 400px;                          /* direction set karne ke liye. */
+}
+
+#SeventhDiv2_tewelehtDiv{
+    background-color:darkkhaki;
+    border: solid 4px black;
+}
+
+/* justify-content: (space-around, space-between, space-evenly */
+#SeventhDiv3{
+    background-color:darkgoldenrod;
+    border:2px dashed black;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+/* align-items: center, stretch, end, start, align-content, order, flex-shrink, flex-grow */
+#SeventhDiv4{
+    background-color:darkgoldenrod;
+    border:2px dashed black;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: start;
+    align-items:start;
+    align-content: start;
+    /* order: -1;
+    /* flex-shrink: 4; 
+    flex-grow: 4; */
+}
+
+/* Media query */
+#EighthDiv{
+    background-color: red;
+    border: 4px solid black;
+    padding:10px;
+}
+
+#Eighth_heading{
+    background-color: aqua;
+    border:4px solid black;
+    width: 200px;
+}
+
+#EigthDiv_FirstDiv{
+    background-color: white;
+    border: 4px solid black;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 200px) and (max-width:500px){
+    #EigthDiv_FirstDiv{
+        background-color: yellowgreen;
+    }
+}
+
+#EigthDiv_SecondDiv{
+    background-color: white;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+#EigthDiv_SecondDiv_Left_box{
+    background-color: blueviolet;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3px;
+    margin: 4px;
+}
+
+#EigthDiv_SecondDiv_Right_box{
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    margin: 4px;
+}
+
+.EighthDiv_Paragraph{
+    border: 2px solid yellow;
+}
+
+@media (max-width:640px) {
+    #EigthDiv_SecondDiv{
+        flex-direction: column;
+    }
+}
+
+#EigthDiv_ThirdDiv{
+    background-color: bisque;
+    border: 5px solid black;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+}
+
+.EigthDiv_ThirdDiv_box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    margin: 3px;
+    padding: 3px;
+}
+
+#EigthDiv_ThirdDiv_box1{
+    background-color: aqua;
+}
+
+#EigthDiv_ThirdDiv_box2{
+    background-color: blue;
+}
+
+#EigthDiv_ThirdDiv_box3{
+    background-color: orange;
+}
+
+#EigthDiv_ThirdDiv_box4{
+    background-color: brown;
+}
+
+@media (min-width:640px) {
+    #EigthDiv_ThirdDiv{
+        flex-direction: row;
+    }
+}
+
+@media (max-width:640px) {
+    #EigthDiv_ThirdDiv{
+        flex-direction: column;
+    }
+}
+
+/* Box-shadow and text shadow */
+#Ninthdiv{
+    background-color: red;
+    border: 5px solid black;
+}
+
+#NinthDiv_heading{
+    background-color: aqua;
+    border: 3px solid black;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+}
+
+#Ninthdiv_FirstDiv{
+    background-color: chocolate;
+    border: 4px solid black;
+    height: 500px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Ninthdiv_FirstDiv_box{
+    background-color: aliceblue;
+    border: 4px solid black;
+    width: 200px;
+    height: 200px;
+    padding: 4px;
+    margin: 4px;
+}
+
+/* Box-shadow and text shadow */
+#Ninthdiv_FirstDiv_Box1{
+    box-shadow: -10px -5px 15px lightgreen;
+    text-shadow: 10px 10px 5px red;
+}
+
+#Ninthdiv_SecondDiv_Box2{
+    box-shadow: 10px 5px 15px 10px lightgreen;
+    text-shadow: red 10px 10px;
+}
+
+#Ninthdiv_ThirdDiv_Box3{
+    box-shadow: inset -15px -15px 10px lightgreen, 15px 15px 15px powderblue;
+    text-shadow: 10px 10px;
+}
+
+#TenthDiv{
+    background-color: red;
+    border: 5px solid black;
+}
+
+.TenthDiv_heading{
+    background-color: aqua;
+    border: 3px solid black;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+}
+
+#Tenthidiv_FirstDiv{
+    background-color: aqua;
+    border: 4px solid black;
+    margin: 10px;
+    height: 600px;
+    /* height: 100vh;
+    width: 100vw; */
+    box-sizing: border-box;
+}
+
+/* Animation in CSS */
+#Tenthidiv_FirstDiv_Div1{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 10px;
+    border: 4px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    animation-name: FirstDiv_Div1;
+    /* animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate; */
+    /* animation-fill-mode: forwards; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: FirstDiv_Div1 5s linear 2s infinite alternate;
+}
+
+@keyframes FirstDiv_Div1 {
+    from{
+        top: 0;
+        left: 0;
+    }
+
+    to{
+        top: 0;
+        left: 1400px;
+    }
+}
+
+#Tenthidiv_FirstDiv_Div2{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 10px;
+    border: 4px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    position:relative;
+    animation-name: FirstDiv_Div2;
+    animation: FirstDiv_Div2 5s linear 2s infinite alternate running;
+}
+
+@keyframes FirstDiv_Div2 {
+    from{
+        top: 380px;
+        left: 1350px;
+    }
+
+    to{
+        top: 380px;
+        left: 0;
+    }
+}
+
+#Tenthidiv_FirstDiv_Div3{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 100px;
+    border: 4px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    position:relative;
+    top: 30%;
+    left: 45%;
+    animation-name: FirstDiv_Div3;
+    animation: FirstDiv_Div3 10s linear 1s infinite alternate running;
+}
+
+@keyframes FirstDiv_Div3 {
+    0%{
+        top: 1%;
+        left: 5%;
+    }
+    30%{
+        top: 5%;
+        left: 90%;
+    }
+    60%{
+        top: 70%;
+        left: 10%;
+    }
+    100%{
+        top: 75%;
+        left: 90%;
+    }
+}
+
+#Tenthidiv_SecondDiv{
+    background-color: aqua;
+    border: 4px solid black;
+    margin: 10px;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+/* transition-property */
+#Tenthidiv_SecondDiv_Div1{
+    background-color: yellowgreen;
+    border: 4px solid black;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+
+}
+
+#Tenthidiv_SecondDiv_Div1:hover{
+    width: 600px;
+    background-color: pink;
+}
+
+#Tenthidiv_SecondDiv_Div2{
+    background-color: purple;
+    border: 4px solid black;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+#Tenthidiv_SecondDiv_Div2:hover{
+    width: 600px;
+    height: 300px;
+    background-color: pink;
+}
+
+#Tenthidiv_SecondDiv_Div3{
+    background-color: orange;
+    border: 4px solid black;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    transition: width 2s, height 3s;
+}
+
+#Tenthidiv_SecondDiv_Div3:hover{
+    width: 600px;
+    height: 300px;
+    background-color: pink;
+}
+
+#Tenthidiv_SecondDiv_Div4{
+    background-color: lightskyblue;
+    border: 4px solid black;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    transition: all 2s linear;
+}
+
+#Tenthidiv_SecondDiv_Div4:hover{
+    width: 600px;
+    height: 300px;
+    background-color: pink;
+}
+
+/* 2D Transform */
+#EleventhDiv{
+    background-color: red;
+    border: 5px solid black;
+}
+
+#EleventhDiv_heading{
+    background-color: aqua;
+    border: 3px solid black;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+}
+
+#EleventhDiv_FirstDiv{
+    background-color: aqua;
+    border: 4px solid black;
+    margin: 10px;
+    height: 600px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#EleventhDiv_FirstDiv_Div1{
+    background-color: orange;
+    border: 4px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    transition: all 3s linear 1s;
+}
+
+/* 2D Transform */
+#EleventhDiv_FirstDiv_Div1:hover{
+    transform: rotate(180deg);
+}
+
+#EleventhDiv_FirstDiv_Div2{
+    background-color: greenyellow;
+    border: 4px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    transition: all 3s linear 1s;
+}
+
+#EleventhDiv_FirstDiv_Div2:hover{
+    transform: scale(2);
+}
+
+#EleventhDiv_FirstDiv_Div3{
+    background-color: blue;
+    border: 4px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    transition: all 3s linear 1s;
+}
+
+#EleventhDiv_FirstDiv_Div3:hover{
+    transform: skew(30deg);
+}
+
+#EleventhDiv_FirstDiv_Div4{
+    background-color: red;
+    border: 4px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    transition: all 3s linear 1s;
+}
+
+#EleventhDiv_FirstDiv_Div4:hover{
+    transform:translate3d(100px, 150px, 200px);
+}
+
+#EleventhDiv_FirstDiv_Div5{
+    background-color: lightseagreen;
+    border: 4px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    transition: all 3s linear 1s;
+}
+
+#EleventhDiv_FirstDiv_Div5:hover{
+    transform: scaleY(3);
+}
+
+#EleventhDiv_FirstDiv_Div6{
+    background-color: goldenrod;
+    border: 4px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    transition: all 3s linear 1s;
+}
+
+#EleventhDiv_FirstDiv_Div6:hover{
+    transform:perspective(30deg);
+}
+
+/* 3D Transform */
+#EleventhDiv_SecondDiv{
+    background-color: aqua;
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    padding: 4rem;
+}
+#EleventhDiv_SecondDiv .Transform_3D{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    padding: 2rem;
+}
+
+#EleventhDiv_SecondDiv #RotateX:hover{
+    transform: rotateX(45deg);
+}
+
+#EleventhDiv_SecondDiv #RotateY:hover{
+    transform: rotateY(45deg);
+}
+
+#EleventhDiv_SecondDiv #RotateZ:hover{
+    transform: rotateZ(45deg);
+}
+
+#EleventhDiv_SecondDiv #TranslateX:hover{
+    transform: translateX(100px);
+}
+
+#EleventhDiv_SecondDiv #TranslateY:hover{
+    transform: translateY(100px);
+}
+
+#EleventhDiv_SecondDiv #TranslateZ:hover{
+    transform:perspective(300px) translateZ(100px);
+}
+
+#EleventhDiv_SecondDiv #ScaleX:hover{
+    transform: scaleX(1.5);
+}
+
+#EleventhDiv_SecondDiv #ScaleY:hover{
+    transform: scaleY(1.5);
+}
+
+#EleventhDiv_SecondDiv #ScaleZ:hover{
+    transform:perspective(300px) rotateY(30deg) scaleZ(1.5);
+}
+/* Card in CSS */
+#TewelthDiv{
+    background-color: aqua;
+    border: 5px solid black;
+}
+
+#TewelthDiv_heading{
+    background-color: yellowgreen;
+    border: 3px solid black;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#TewelthDiv_FirstDiv{
+    background-color: violet;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 3000px;
+    margin: 10px;
+}
+
+#TewelthDiv_FirstDiv_Div1{
+    width: 400px;
+    height: 600px;
+    padding-top: 20px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+#TewelthDiv_FirstDiv_Div1 img{
+    height: 300px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#TewelthDiv_FirstDiv_Div1 p{
+    font-size: 20px;
+}
+
+#TewelthDiv_FirstDiv_Div1_heading{
+    font-size: 25px;
+}
+
+#TewelthDiv_FirstDiv_Div2{
+    width: 500px;
+    height: 1100px;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 20px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#TewelthDiv_FirstDiv_Div2 div#Order_Summery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+#TewelthDiv_FirstDiv_Div2 img{
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+#TewelthDiv_FirstDiv_Div2 p{
+    font-size: 25px;
+}
+
+#TewelthDiv_FirstDiv_Div2_heading{
+    color: white;
+    font-size: 40px;
+}
+
+#TewelthDiv_FirstDiv_Div2 div.amountbox{
+    width: 450px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#TewelthDiv_FirstDiv_Div2 button.Paymentbutton{
+    width: 450px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: lightblue;
+    color: black;
+    box-shadow: 10px 10px 25px lightblue;
+}
+
+#TewelthDiv_FirstDiv_Div2 div.cancelbox{
+    font-size: 50px;
+}
+
+#TewelthDiv_FirstDiv_Div2 div.cancelbox a{
+    color: black;
+    text-decoration: none;
+}
+
+#TewelthDiv_FirstDiv_Div2 div.amountbox div.leftbox{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 200px;
+}
+
+#TewelthDiv_FirstDiv_Div2 div.amountbox img{
+    width: 100px;
+    height: 100px;
+}
+
+#TewelthDiv_FirstDiv_Div2 div.rightbox{
+    font-size: 30px;
+}
+
+#TewelthDiv_FirstDiv_Div3{
+    width: 1400px;
+    height: 700px;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+    display: flex;
+    box-shadow: 10px 10px 40px 40px black;
+    /* flex-direction: space-between; */
+}
+
+#TewelthDiv_FirstDiv_Div3 .leftboxx{
+    width: 50%;
+    background-color: rgba(117, 10, 217, 0.607);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#TewelthDiv_FirstDiv_Div3 div.views{
+    display: flex;
+    flex-direction:row;
+    gap: 50px;
+}
+
+#TewelthDiv_FirstDiv_Div3 p{
+    text-align: center;
+}
+
+#TewelthDiv_FirstDiv_Div3 h2{
+    font-size: 40px;
+}
+
+#TewelthDiv_FirstDiv_Div3 .rightboxx img{
+    height: fit-content;
+    width: 700px;
+    height: 700px;
+}
+
+#TharteenDiv{
+    background-color: rgba(69, 69, 194, 0.817);
+    /* height: 2000px; */
+    border: 5px solid black;
+}
+
+.TharteenDiv_heading{
+    background-color: aqua;
+    font-size: 50px;
+    margin: 20px;
+    width: fit-content;
+}
+
+/* Grid, Fraction unit(fr) */
+#TharteenDiv_Div1{
+    border: 4px solid black;
+    background-color: aquamarine;
+    height: 700px;
+    padding: 20px;
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    /* grid-template-rows: 300px 300px; */
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(1,1fr);
+}
+
+#TharteenDiv .itemm{
+    background-color: rgb(129, 176, 35);
+    border: 3px solid black;
+    color: black;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:720px) {
+    #TharteenDiv_Div1{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #TharteenDiv_Div1 .header, .footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #TharteenDiv_Div1 .sidebar{
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    #TharteenDiv_Div1 .Content1{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+
+@media (max-width:720px){
+    
+}
+
+/* justify-items, align-items and place-items */
+#TharteenDiv_Div2{
+    border: 4px solid black;
+    background-color: aquamarine;
+    height: 1000px;
+    padding: 20px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+    /* justify-items: start;                ( All Grid cell )                end, start, center, stretch                    
+    align-items: end;                       ( All Grid cell )                end, start, center, stretch
+    place-items: center;                    ( All Grid cell )                Horziontal + vertical center */                                 
+}
+
+/* justify-self, align-self and place-self */
+#TharteenDiv_Div2 .Item{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    border: 3px solid black;
+    /* justify-self: ;                      ( Only one cell )                end, start, center, stretch 
+    align-self: ;                           ( Only one cell )                end, start, center, stretch */
+    /* place-self: center;                  ( Only one cell )                Horziontal + vertical center */
+}
+
+#TharteenDiv_Div3{
+    border: 4px solid black;
+    background-color: aquamarine;
+    height: 700px;
+    padding: 20px;
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-areas: 
+        "header header header"
+        "sidebar content1 content1"
+        "sidebar content2 content3"
+        "footer footer footer";
+}
+
+#TharteenDiv .itemmm{
+    background-color: rgb(129, 176, 35);
+    border: 3px solid black;
+    color: black;
+    font-size: 40px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#TharteenDiv_Div3 #header{
+    grid-area: header;
+}
+
+#TharteenDiv_Div3 #Sidebar{
+    grid-area: sidebar;
+}
+
+#TharteenDiv_Div3 #content1{
+    grid-area: content1;
+}
+
+#TharteenDiv_Div3 #content2{
+    grid-area: content2;
+}
+
+#TharteenDiv_Div3 #content3{
+    grid-area: content3;
+}
+
+#TharteenDiv_Div3 #footer{
+    grid-area: footer;
+}
+
+/* Some Other properties */
+#FourteenDiv{
+    height: 1000px;
+    background-color: aqua;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.FourteenDiv_para{
+    background-color: rgb(10, 39, 39);
+    outline: 3px solid blueviolet;
+    outline-width: 10px;
+    outline-color: red;
+    outline-style: dashed;
+    outline-offset: 5px;
+    font-size: 20px;
+    color: white;
+    border: 3px solid black;
+    margin: 20px;
+    width: fit-content;
+
+}
